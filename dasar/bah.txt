@@ -1,1 +1,7 @@
+_____________________________________________________________________________________________________________
 
+PHP: Hypertext Preprocessor adalah bahasa skrip yang dapat ditanamkan atau disisipkan ke dalam HTML.
+PHP banyak dipakai untuk memprogram situs web dinamis. 
+PHP dapat digunakan untuk membangun sebuah CMS.
+
+_____________________________________________________________________________________________________________
