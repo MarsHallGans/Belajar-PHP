@@ -1,0 +1,18 @@
+"Variabel adalah suatu lokasi penyimpanan di dalam memori komputer\nyang berisikan nilai atau informasi yang nilainya tidak diketahui maupun telah diketahui
+Variabel di dalam PHP harus diawali dengan dollar sign atau tanda dollar ($).
+Setelah tanda dollar ($), sebuah variabel PHP harus diikuti dengan karakter pertama berupa huruf atau underscore (_),
+kemudian untuk karakter kedua dan seterusnya bisa menggunakan huruf, angka atau underscore (_)
+   
+
+
+$nama = "MarsHall";
+echo "Hallo, nama saya $nama";
+
+
+
+Output :
+
+<?php
+$nama = "MarsHall";
+echo "Hallo, nama saya $nama";
+?>

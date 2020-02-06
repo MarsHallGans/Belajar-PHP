@@ -1,0 +1,67 @@
+_____________________________________________________________________________________________________________
+
+Curl adalah sebuah program dan library untuk mengirim dan mengambil data melalui URL.
+Artinya curl adalah sebuah program atau tools yang digunakan pada command line (CMD).
+( curl http://nauliani.com )
+
+Curl biasa digunakan untuk membuat bot. contohnya bot telegram dan lain-lain.
+Agar server bot bisa mengambil data dari server lain, maka dia harus mampu membuat Http Request, di sinilah Curl digunakan.
+Tidak hanya untuk itu saja penerapan Curl…
+
+Bisa juga diterapkan untuk:
+
+1. Mengambil halaman web lalu mengubahnya jadi PDF;
+2. Upload dan Download File;
+3. Melakukan Login;
+4. Scrape;
+dan sebagainya.
+
+source : https://petanikode.com
+
+Cara penulisan CURL Di PHP :
+
+ $ch = curl_init(); 
+
+    // set url 
+    curl_setopt($ch, CURLOPT_URL, "http://nauliani.com");
+
+    // return the transfer as a string 
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+
+    // $output contains the output string 
+    $output = curl_exec($ch); 
+
+    // tutup curl 
+    curl_close($ch);      
+
+    // menampilkan hasil curl
+    echo $output;
+
+
+OUTPUT : 
+
+<?php
+
+ $ch = curl_init(); 
+
+    // set url 
+    curl_setopt($ch, CURLOPT_URL, "http://nauliani.com/");
+
+    // return the transfer as a string 
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+
+    // $output contains the output string 
+    $output = curl_exec($ch); 
+
+    // tutup curl 
+    curl_close($ch);      
+
+    // menampilkan hasil curl
+    echo $output;
+?>
+
+
+Note : Jika dijalankan Di browser maka akan tampilan halaman
+       web yang kita inputkan.
+
+_____________________________________________________________________________________________________________

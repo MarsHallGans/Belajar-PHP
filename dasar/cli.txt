@@ -1,0 +1,25 @@
+_____________________________________________________________________________________________________________
+
+PHP CLI merupakan PHP yang berjalan di atas Command Line. Biasanya, program yang berbasis teks memiliki fungsi tersendiri untuk mengambil input. Contohnya Python menggunakan fungsi input() dan raw_input(), java menggunakan Scanner dan BufferReader, C++ menggunakan cin, Pascal menggunakan readln(), dsb. Lalu, Bagaiaman dengan PHP?
+
+Menggunakan Fungsi fopen()
+Cara pertama mengambil input di PHP CLI adalah dengan menggunakan fungsi fopen(). Pada dasarnya fungsi ini digunakan untuk membuka atau membaca file. Namun, dapat digunakan juga untuk mengambil input. Contoh penggunaan:
+
+
+echo “Siapa nama kamu: “;
+$input_nama = fopen(“php://stdin”,“r”);
+$nama = trim(fgets($input_nama));
+echo “Hello $nama, apa kabar?\n”;
+
+Output : 
+
+<?php
+echo "Siapa nama kamu: ";
+$input_nama = fopen("php://stdin","r");
+$nama = trim(fgets($input_nama));
+echo "Hello $nama, apa kabar?\n";
+?>
+
+Source : https://www.petanikode.com/php-cli-input/
+
+_____________________________________________________________________________________________________________
